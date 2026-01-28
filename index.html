@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Emotions - A Revolução da Inteligência Socioemocional</title>
+    
+    <!-- Google Fonts: Rajdhani (Tech/Agressivo) & Inter (Leitura) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Rajdhani:wght@500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Configuração de Cores Vibrantes e Tech -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        tech: ['Rajdhani', 'sans-serif'],
+                    },
+                    colors: {
+                        tech: {
+                            black: '#050505',
+                            dark: '#0F0F0F',
+                            yellow: '#FFE600', /* Amarelo Cyberpunk */
+                            blue: '#0047FF',   /* Azul Laser */
+                            white: '#FFFFFF',
+                            gray: '#1A1A1A'
+                        }
+                    },
+                    boxShadow: {
+                        'neon-yellow': '0 0 15px rgba(255, 230, 0, 0.5)',
+                        'neon-blue': '0 0 15px rgba(0, 71, 255, 0.5)',
+                        'hard': '8px 8px 0px 0px rgba(255, 230, 0, 1)',
+                    },
+                    animation: {
+                        'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilização Customizada Agressiva */
+        body {
+            background-color: #050505;
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Sliders Estilo Tech */
+        input[type=range] {
+            -webkit-appearance: none; 
+            background: transparent; 
+        }
+        
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 28px;
+            width: 12px;
+            background: #FFE600;
+            border: 2px solid #000;
+            cursor: pointer;
+            margin-top: -10px; 
+            box-shadow: 0 0 10px #FFE600;
+            transition: all 0.2s;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            background: #333;
+            border: 1px solid #555;
+        }
+
+        /* Grid Background Pattern */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+
+        .clip-diagonal {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+        
+        .clip-button {
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%, 0% 25%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-tech-yellow selection:text-black">
+
+    <!-- Navegação Tech -->
+    <nav class="fixed top-0 w-full z-50 bg-tech-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-tech-blue flex items-center justify-center font-bold text-xl text-white skew-x-[-10deg]">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <span class="font-tech font-bold text-2xl uppercase tracking-wider">Mind<span class="text-tech-yellow">Emotions</span></span>
+            </div>
+            
+            <a href="https://wa.me/5586999154867" class="hidden md:flex bg-tech-yellow text-black font-tech font-bold text-lg px-6 py-2 hover:bg-white transition-colors duration-300 items-center gap-2 clip-button shadow-neon-yellow">
+                ACESSAR AGORA <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION IMPACTANTE -->
+    <header class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-grid">
+        <!-- Luzes de Fundo -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-tech-blue blur-[150px] opacity-20 rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-tech-yellow blur-[150px] opacity-10 rounded-full pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                
+                <div class="lg:w-1/2 text-left">
+                    <div class="inline-flex items-center gap-2 border border-tech-yellow/50 px-3 py-1 rounded-sm text-tech-yellow text-xs font-bold tracking-[0.2em] mb-6 uppercase bg-tech-yellow/10">
+                        <span class="w-2 h-2 bg-tech-yellow rounded-full animate-pulse"></span> Sistema V 2.0 Live
+                    </div>
+                    
+                    <h1 class="font-tech font-black text-6xl md:text-8xl leading-[0.9] mb-6 uppercase">
+                        Não Apenas <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-tech-yellow to-white">Sentir.</span><br>
+                        <span class="text-tech-blue">Transformar.</span>
+                    </h1>
+                    
+                    <p class="text-xl text-gray-400 max-w-xl mb-8 font-light border-l-4 border-tech-blue pl-6">
+                        A primeira plataforma de <strong>Inteligência de Dados Emocionais</strong> que converte sentimentos invisíveis em desempenho escolar mensurável.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#demo" class="bg-tech-yellow text-black px-8 py-5 font-tech font-bold text-xl uppercase tracking-wider hover:bg-white hover:shadow-neon-yellow transition-all duration-300 clip-button flex justify-center items-center">
+                            Testar Tecnologia
+                        </a>
+                        <a href="https://wa.me/5586999154867" class="border border-white/30 text-white px-8 py-5 font-tech font-bold text-xl uppercase tracking-wider hover:bg-white/10 hover:border-white transition-all duration-300 flex justify-center items-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> Falar com Expert
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Visual Tech Hero -->
+                <div class="lg:w-1/2 relative">
+                    <div class="relative z-10 bg-tech-dark border border-white/10 p-2 rounded-xl shadow-2xl transform rotate-1 hover:rotate-0 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Tecnologia em sala de aula" 
+                             class="rounded-lg grayscale hover:grayscale-0 transition duration-500 w-full object-cover h-[400px]">
+                        
+                        <!-- HUD Overlay -->
+                        <div class="absolute top-6 right-6 bg-black/80 backdrop-blur border border-tech-yellow p-4">
+                            <p class="text-tech-yellow text-xs font-mono mb-1">DADOS EM TEMPO REAL</p>
+                            <p class="text-3xl font-tech font-bold text-white">FOCO: 94%</p>
+                            <div class="w-full bg-gray-800 h-1 mt-2"><div class="bg-tech-yellow h-1 w-[94%]"></div></div>
+                        </div>
+                    </div>
+                    <!-- Elemento decorativo atrás -->
+                    <div class="absolute top-4 -right-4 w-full h-full border-2 border-tech-blue/30 rounded-xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- DADOS & IMPACTO (Preto e Amarelo) -->
+    <section class="py-20 bg-tech-yellow text-black clip-diagonal relative z-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-black/10">
+                <div class="py-4">
+                    <h3 class="font-tech font-black text-7xl md:text-8xl tracking-tighter mb-2">52M</h3>
+                    <p class="font-bold text-xl uppercase tracking-widest">Estudantes no Brasil</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="font-tech font-black text-7xl md:text-8xl tracking-tighter mb-2">87%</h3>
+                    <p class="font-bold text-xl uppercase tracking-widest">Demanda dos Pais</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="font-tech font-black text-7xl md:text-8xl tracking-tighter mb-2">+40%</h3>
+                    <p class="font-bold text-xl uppercase tracking-widest">Melhoria Acadêmica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O PROBLEMA (Tech Dark) -->
+    <section class="py-24 bg-tech-black relative">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="font-tech font-bold text-5xl md:text-6xl text-white mb-8 uppercase">
+                        O Inimigo <span class="text-tech-blue text-stroke text-transparent">Invisível</span>
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 items-start group">
+                            <div class="w-16 h-16 bg-gray-900 border border-red-500/50 flex items-center justify-center text-red-500 text-2xl shrink-0 group-hover:bg-red-500 group-hover:text-black transition duration-300">
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-white mb-2 uppercase">Cegueira de Dados</h4>
+                                <p class="text-gray-400 leading-relaxed">Escolas operam no escuro. Professores não sabem quem está sofrendo até que a nota caia.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start group">
+                            <div class="w-16 h-16 bg-gray-900 border border-red-500/50 flex items-center justify-center text-red-500 text-2xl shrink-0 group-hover:bg-red-500 group-hover:text-black transition duration-300">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-white mb-2 uppercase">Atraso na Resposta</h4>
+                                <p class="text-gray-400 leading-relaxed">Intervenções tardias custam o futuro do aluno. O tempo de reação atual é de meses, nós reduzimos para segundos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gráficos Tech -->
+                <div class="md:w-1/2 w-full">
+                    <div class="bg-gray-900 border border-white/5 p-8 relative overflow-hidden group hover:border-tech-blue/50 transition duration-500">
+                        <!-- Background Grid -->
+                        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+                        
+                        <div class="relative z-10 flex justify-between items-end h-64 gap-4">
+                            <!-- Barras -->
+                            <div class="w-full bg-tech-dark h-[40%] relative group-hover:h-[45%] transition-all duration-500 border-t-2 border-white/20">
+                                <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-gray-500 text-xs font-mono">TRADICIONAL</span>
+                            </div>
+                            <div class="w-full bg-tech-blue h-[88%] relative shadow-[0_0_20px_rgba(0,71,255,0.4)] animate-pulse-fast">
+                                <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-tech-blue font-bold font-mono">MIND</span>
+                                <div class="absolute top-2 w-full text-center text-white font-black text-xl">88%</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex justify-between items-center border-t border-white/10 pt-4">
+                            <span class="text-white font-tech text-xl uppercase">Performance</span>
+                            <span class="text-tech-blue font-mono text-sm">LIVE DATA <i class="fa-solid fa-circle fa-xs animate-pulse"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMO INTERATIVA (Painel de Controle) -->
+    <section id="demo" class="py-24 bg-gray-900 border-y border-white/10 relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-tech-yellow font-mono text-sm tracking-[0.3em] uppercase">Tecnologia Proprietária</span>
+                <h2 class="font-tech font-black text-5xl md:text-6xl text-white mt-2 uppercase">
+                    Painel de Controle <span class="text-tech-yellow">Mental</span>
+                </h2>
+            </div>
+
+            <div class="bg-black border border-white/10 p-6 md:p-12 shadow-2xl relative overflow-hidden">
+                <!-- Decorative Tech Lines -->
+                <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-tech-yellow"></div>
+                <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-tech-yellow"></div>
+                <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-tech-yellow"></div>
+                <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-tech-yellow"></div>
+
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <!-- Controles -->
+                    <div class="w-full lg:w-1/2 space-y-10">
+                        <!-- Slider Criatividade -->
+                        <div>
+                            <div class="flex justify-between mb-4">
+                                <label class="text-white font-tech text-xl uppercase tracking-wider flex items-center gap-3">
+                                    <i class="fa-solid fa-lightbulb text-tech-yellow"></i> Criatividade
+                                </label>
+                                <span id="val-criatividade" class="text-tech-yellow font-mono text-2xl font-bold">8.0</span>
+                            </div>
+                            <input type="range" min="0" max="10" step="0.1" value="8" id="slider-criatividade" class="w-full">
+                        </div>
+
+                        <!-- Slider Foco -->
+                        <div>
+                            <div class="flex justify-between mb-4">
+                                <label class="text-white font-tech text-xl uppercase tracking-wider flex items-center gap-3">
+                                    <i class="fa-solid fa-crosshairs text-tech-blue"></i> Foco Laser
+                                </label>
+                                <span id="val-foco" class="text-tech-blue font-mono text-2xl font-bold">5.5</span>
+                            </div>
+                            <input type="range" min="0" max="10" step="0.1" value="5.5" id="slider-foco" class="w-full accent-blue-600" style="--thumb-color: blue;">
+                            <!-- CSS inline hack for color change handled in JS logic generally, but keeping simple here -->
+                        </div>
+
+                        <!-- Slider Motivação -->
+                        <div>
+                            <div class="flex justify-between mb-4">
+                                <label class="text-white font-tech text-xl uppercase tracking-wider flex items-center gap-3">
+                                    <i class="fa-solid fa-fire text-white"></i> Energia
+                                </label>
+                                <span id="val-motivacao" class="text-white font-mono text-2xl font-bold">9.2</span>
+                            </div>
+                            <input type="range" min="0" max="10" step="0.1" value="9.2" id="slider-motivacao" class="w-full grayscale brightness-200">
+                        </div>
+                    </div>
+
+                    <!-- Visualização App -->
+                    <div class="w-full lg:w-1/2 flex items-center justify-center">
+                        <div class="relative w-[320px] h-[550px] bg-tech-dark border-4 border-gray-800 rounded-3xl shadow-neon-blue flex flex-col p-4">
+                            <!-- App Header -->
+                            <div class="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
+                                <div class="text-xs text-gray-400 font-mono">STATUS: ONLINE</div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            </div>
+                            
+                            <!-- Main Metric -->
+                            <div class="flex-1 flex flex-col items-center justify-center text-center">
+                                <div id="emoji-display" class="text-8xl mb-4 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] transition-transform duration-300">🤩</div>
+                                <h3 id="status-text" class="text-tech-yellow font-tech text-3xl font-bold uppercase mb-2">Fluxo Total</h3>
+                                <p class="text-gray-400 text-sm px-4">Algoritmo detectou alta capacidade cognitiva.</p>
+                            </div>
+
+                            <!-- Mini Graphs -->
+                            <div class="mt-auto grid grid-cols-3 gap-2 h-24 items-end">
+                                <div id="bar-criatividade" class="bg-tech-yellow w-full transition-all duration-300 relative group">
+                                    <div class="absolute -top-6 w-full text-center text-[10px] text-tech-yellow opacity-0 group-hover:opacity-100">CRIA</div>
+                                </div>
+                                <div id="bar-foco" class="bg-tech-blue w-full transition-all duration-300 relative group">
+                                    <div class="absolute -top-6 w-full text-center text-[10px] text-tech-blue opacity-0 group-hover:opacity-100">FOCO</div>
+                                </div>
+                                <div id="bar-motivacao" class="bg-white w-full transition-all duration-300 relative group">
+                                    <div class="absolute -top-6 w-full text-center text-[10px] text-white opacity-0 group-hover:opacity-100">NRG</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP AGRESSIVO -->
+    <section class="py-24 bg-tech-black border-t border-white/10">
+        <div class="container mx-auto px-4">
+            <h2 class="font-tech font-bold text-5xl text-white mb-16 text-center uppercase">Plano de <span class="text-tech-blue">Dominação</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Fase 1 -->
+                <div class="bg-gray-900 p-8 border-l-4 border-tech-yellow hover:bg-gray-800 transition duration-300 group">
+                    <span class="text-4xl font-black text-gray-700 group-hover:text-tech-yellow transition duration-300 mb-4 block">01</span>
+                    <h3 class="text-2xl font-bold text-white mb-2 uppercase">Validação & Piloto</h3>
+                    <p class="text-gray-400 text-sm">Certificação LGPD. Implementação em 10 escolas no Piauí. Prova de conceito agressiva.</p>
+                </div>
+
+                <!-- Fase 2 -->
+                <div class="bg-gray-900 p-8 border-l-4 border-tech-blue hover:bg-gray-800 transition duration-300 group">
+                    <span class="text-4xl font-black text-gray-700 group-hover:text-tech-blue transition duration-300 mb-4 block">02</span>
+                    <h3 class="text-2xl font-bold text-white mb-2 uppercase">Expansão IA</h3>
+                    <p class="text-gray-400 text-sm">250 Escolas. Lançamento do Motor Preditivo MindAI. Antecipação de crises escolares.</p>
+                </div>
+
+                <!-- Fase 3 -->
+                <div class="bg-gray-900 p-8 border-l-4 border-white hover:bg-gray-800 transition duration-300 group">
+                    <span class="text-4xl font-black text-gray-700 group-hover:text-white transition duration-300 mb-4 block">03</span>
+                    <h3 class="text-2xl font-bold text-white mb-2 uppercase">Escala Global</h3>
+                    <p class="text-gray-400 text-sm">Integração com grandes sistemas (SAS/Poliedro). Versões Latam e Global.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="py-32 bg-tech-blue relative overflow-hidden text-center">
+        <!-- Pattern Overlay -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="container mx-auto px-4 relative z-10 max-w-4xl">
+            <h2 class="font-tech font-black text-6xl md:text-8xl text-white mb-8 uppercase leading-none">
+                O Futuro é <br><span class="text-tech-black bg-tech-yellow px-4 transform skew-x-[-10deg] inline-block">Emocional</span>
+            </h2>
+            <p class="text-2xl text-white/80 mb-12 font-light">Não fique para trás na maior revolução educacional da década.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://wa.me/5586999154867" class="bg-white text-tech-blue font-black text-xl py-6 px-12 uppercase tracking-widest hover:bg-tech-black hover:text-white transition duration-300 shadow-2xl clip-button">
+                    Seja um Investidor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 border-t border-white/10 text-center">
+        <div class="flex justify-center items-center gap-2 mb-4">
+            <i class="fa-solid fa-bolt text-tech-yellow"></i>
+            <span class="font-tech font-bold text-white text-xl uppercase">MindEmotions</span>
+        </div>
+        <p class="text-gray-500 text-xs font-mono">&copy; 2025 MIND EMOTIONS INTELLIGENCE SYSTEMS. TERESINA-PI.</p>
+    </footer>
+
+    <!-- Scripts de Interatividade -->
+    <script>
+        // Lógica dos Sliders (Mantida mas adaptada visualmente)
+        const sliders = [
+            { id: 'criatividade', barId: 'bar-criatividade', displayId: 'val-criatividade' },
+            { id: 'foco', barId: 'bar-foco', displayId: 'val-foco' },
+            { id: 'motivacao', barId: 'bar-motivacao', displayId: 'val-motivacao' }
+        ];
+
+        const emojiDisplay = document.getElementById('emoji-display');
+        const statusText = document.getElementById('status-text');
+
+        function updateUI() {
+            let total = 0;
+            sliders.forEach(item => {
+                const slider = document.getElementById('slider-' + item.id);
+                const val = parseFloat(slider.value);
+                total += val;
+                document.getElementById(item.displayId).innerText = val.toFixed(1);
+                document.getElementById(item.barId).style.height = (val * 10) + '%';
+            });
+
+            const avg = total / 3;
+            
+            if (avg < 4) {
+                emojiDisplay.innerText = "⚠️";
+                statusText.innerText = "ALERTA DETECTADO";
+                statusText.className = "text-red-500 font-tech text-3xl font-bold uppercase mb-2 animate-pulse";
+            } else if (avg < 7) {
+                emojiDisplay.innerText = "⚖️";
+                statusText.innerText = "ESTÁVEL";
+                statusText.className = "text-white font-tech text-3xl font-bold uppercase mb-2";
+            } else {
+                emojiDisplay.innerText = "🚀";
+                statusText.innerText = "ALTA PERFORMANCE";
+                statusText.className = "text-tech-yellow font-tech text-3xl font-bold uppercase mb-2";
+            }
+        }
+
+        sliders.forEach(item => {
+            const slider = document.getElementById('slider-' + item.id);
+            slider.addEventListener('input', updateUI);
+        });
+
+        updateUI();
+    </script>
+</body>
+</html>
